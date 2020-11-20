@@ -107,8 +107,8 @@ span.items.items20 {
     transition: .3s all ease;
     transition-duration: 1s;
 }
-
-span.items:hover {
+span.items.items18:hover,
+span.items.items20:hover {
     transform: rotate(360deg);
     color: orchid;
 }
