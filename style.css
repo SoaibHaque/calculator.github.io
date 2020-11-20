@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.calculator {
+    border-radius: .4rem;
+    box-shadow: 4px 12px 12px rgba(0, 0, 0, 0.5), 5px 15px 200px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0.5rem;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: 2rem repeat(7, auto);
+    grid-gap: 1rem;
+}
+
+.items {
+    outline: none;
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    font-size: large;
+    font-weight: 200;
+    line-height: 5rem;
+    text-align: center;
+    align-items: center;
+    transition: .4s all ease;
+    cursor: pointer;
+}
+
+.items:hover {
+    background-color: white;
+}
+
+button.items:active {
+    transform: translateY(-12px);
+}
+
+.items0 {
+    text-align: right;
+    color: #888888;
+    grid-area: 1/1/2/-1;
+    border-radius: 0;
+}
+
+.items1 {
+    height: 6rem;
+    font-size: 2.5rem;
+    border-radius: 1rem;
+    line-height: 6rem;
+    text-align: right;
+    grid-area: 2/1/3/-1;
+}
+
+.items0,
+.items1 {
+    padding: 0 1.2rem;
+}
+
+.items1:hover,
+.items0:hover {
+    cursor: auto;
+}
+
+.items2 {
+    background-color: tomato;
+}
+
+.items5 {
+    background-color: #0f9b3d;
+}
+
+.items9 {
+    background-color: #FDC201;
+}
+
+.items13 {
+    background-color: #E83C88;
+}
+
+.items17 {
+    background-color: #00B1C3;
+}
+
+.items21 {
+    background-color: #802872;
+}
+
+span.items.items18,
+span.items.items20 {
+    font-family: cursive;
+    color: orangered;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: auto;
+    transition: .3s all ease;
+    transition-duration: 1s;
+}
+
+span.items:hover {
+    transform: rotate(360deg);
+    color: orchid;
+}
+
+@media only screen and (max-width: 922px) {
+    body {
+        background: url(bg-small.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
